@@ -1,0 +1,32 @@
+/* index.module.css */
+.mainDiv {
+    display: flex; /* Enable flexbox layout */
+    flex-direction: column; /* Stack the content vertically */
+    width: 100%;
+  }
+
+  .topNav{
+    z-index: 100;
+  max-width: 1440px;
+  position: fixed;
+  width: 100%;
+  }
+
+  .content {
+    display: flex; 
+  }
+  
+  
+  .childrenDiv {
+    flex: 1; /* Allow the main content area to take up the remaining space */
+    /* Styles for the main content area */
+
+  }
+  .maxWidth1440 {
+    max-width: 1440px;
+    margin: 0 auto;
+    /* Center the content horizontally within the max width */
+    display: flex;
+    justify-content: center;
+    z-index: 1000;
+}
