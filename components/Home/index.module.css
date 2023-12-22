@@ -16,7 +16,7 @@
 .head {
   color: #fff;
   font-family: Montserrat;
-  font-size: 5vw;
+  font-size: 4vw;
   font-style: normal;
   font-weight: 700;
   line-height: 95.692%;
@@ -33,7 +33,7 @@
   align-items: center;
 }
 .form {
-  width: 100%;
+  width: 90%;
   height: auto;
   border-radius: 5px;
   background: #fff;
@@ -506,6 +506,11 @@
 }
 
 @media (max-width: 1440px) {
+  /* Page 1 */
+  .head {
+    font-size: 5.5vw;
+  }
+
   /* Page 2 */
   .house2{
     width: 42vw;
