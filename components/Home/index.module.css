@@ -1,5 +1,9 @@
 .main {
   padding-top: 7.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 /* Page 1 */
 .page1 {
@@ -37,7 +41,7 @@
   height: auto;
   border-radius: 5px;
   background: #fff;
-  padding: 3.5rem 3rem;
+  padding: 3.5rem 2.5rem;
   padding-bottom: 0;
   display: flex;
   flex-direction: column;
@@ -271,12 +275,14 @@
 
 /* Page 3 */
 .page3 {
-  padding: 4rem 5rem;
+  padding: 4rem 5rem 4rem 5rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   background: #f2f2f2;
+  /* border: 1px solid red; */
+  width: 100%;
 }
 .p3top {
   display: flex;
@@ -301,8 +307,11 @@
 }
 .p3cent {
   display: flex;
+  flex-direction: row;
+  justify-content: center;
   align-items: center;
   gap: 2rem;
+  width: 100%;
 }
 .boxCont {
   display: flex;
@@ -437,6 +446,7 @@
 
 /* page 4 */
 .page4 {
+  /* border: 1px solid red; */
   padding: 4rem 5rem;
   display: flex;
   flex-direction: column;
@@ -523,6 +533,29 @@
     justify-content: left;
     gap: 2rem;
   }
+
+  /* page 3 */
+  .page3{
+    padding: 4rem 5rem 4rem 5rem;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0;
+  }
+  .p3cent{
+    justify-content: center;
+  }
+  .container{
+    width: 24vw;
+    height: auto;
+  }
+  .banner{
+    width: 23vw;
+  }
+
+  /* Page 4 */
+  .p4div2{
+    grid-template-columns: auto auto auto;
+  }
 }
 @media (max-width: 1267px) {
   /* Page 2 */
@@ -540,12 +573,30 @@
   .btext{
     font-size: 1.5vw;
   }
+
+    /* page 3 */
+    .p3cent{
+      flex-direction: column;
+      gap: 3rem;
+    }
+    .container{
+      width: 24vw;
+      height: auto;
+    }
+    .banner{
+      width: 23vw;
+    }
+
+      /* Page 4 */
+  .p4div2{
+    grid-template-columns: auto auto ;
+  }
 }
 @media (max-width: 1024px) {
   /* Page 1 */
   .page1 {
     flex-direction: column;
-    height: 105vh;
+    height: 900px;
     gap: 5rem;
   }
   .head {
@@ -556,13 +607,25 @@
   }
 
   /* Page 2 */
+  .page2{
+    padding: 4rem 3rem;
+  }
   .p2cent{
     flex-direction: column;
     align-items: center;
   }
+  .p2cent_right{
+    justify-content: center;
+    align-items: center;
+  }
+  .p2head{
+    font-size: 4.5vw;
+  }
   .house2{
     width: 70vw;
+    height: 90vw;
   }
+
   .par{
     text-align: center;
   }
@@ -570,15 +633,68 @@
     justify-content: center;
     gap: 5vw;
   }
+  .box{
+    width: 18vw;
+    height: 20vw;
+  }
+  .lm_btn{
+    width: 160px;
+    height: 50px;
+  }
+  .hrBox{
+    flex-direction: column;
+    gap: 5rem;
+  }
+
+/* Page 3 */
+.p3cent{
+  flex-direction: column;
 }
+.container{
+  width: 350px;
+  height: auto;
+}
+.banner{
+  width: 340px;
+}
+
+/* Frame 18 */
+.frame18{
+  flex-direction: column;
+  height: 50vh;
+  gap: 1rem;
+}
+}
+
 @media (max-width: 768px) {
+  /* Page 1 */
   .form {
     width: 100%;
   }
+
+  /* Page 2 */
+  .box{
+    width: 20vw;
+    height: 20vw;
+  }
+
+  /* Page 3 */
+
+
+        /* Page 4 */
+        .page4{
+          padding: 4rem 0;
+        }
+        .p4div2{
+          grid-template-columns: auto  ;
+        }
 }
+
+
 @media (max-width: 581px) {
+  /* Page 1 */
   .page1 {
-    height: 100vh;
+    height: 850px;
     gap: 4rem;
   }
   .head {
@@ -590,12 +706,94 @@
   .i_i {
     gap: 3rem;
   }
+
+  /* Page 2 */
+  .box{
+    width: 23vw;
+    height: 23vw;
+    align-items: center;
+  }
+  .btext{
+    text-align: center;
+  }
+  .icon{
+    width: 7vw;
+    height: 7vw;
+  }
+  .bhead{
+    font-size: 10vw;
+  }
+
+  /* Page 3 */
+  .page3{
+    padding: 4rem 0;
+  }
+  .p3head{
+    font-size: 8vw;
+  }
+.p3cent{
+  flex-direction: column;
+}
+.container{
+  width: 300px;
+  height: auto;
+}
+.banner{
+  width: 290px;
+}
+.callBtn {
+  padding: 15px;
+  font-size: 4vw;
+}
 }
 @media (max-width: 425px) {
+  /* Page 1 */
+  .head{
+    font-size: 10vw;
+  }
   .form {
-    padding: 3.5rem 2rem;
+    padding: 2.1rem 2rem;
   }
   .i_i {
     gap: 2rem;
+  }
+
+  /* Page 2 */
+  .page2{
+    padding: 4rem 2rem;
+  }
+.btag{
+  font-size: 5vw;
+}
+
+  /* Page 3 */
+  .p3head{
+    font-size: 8vw;
+  }
+.p3cent{
+  flex-direction: column;
+}
+.container{
+  width: 300px;
+  height: auto;
+}
+.banner{
+  width: 290px;
+}
+.number{
+  font-size: 15vw;
+}
+}
+@media (max-width: 375px) {
+  .head{
+    font-size: 11vw;
+  }
+
+  /* Page 3 */
+  .number{
+    display: none;
+  }
+  .container{
+    margin-left: 0;
   }
 }

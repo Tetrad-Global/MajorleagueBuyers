@@ -70,29 +70,56 @@ const HomeIndex = () => {
         </div>
       </div>
 
-   <div className={styles.page2}>
+      <div className={styles.page2}>
         <div className={styles.p2top}>
           <text className={styles.p2head}>Why You Should Sell Now?</text>
         </div>
         <div className={styles.p2cent}>
           <Image src={house2} alt="house2" className={styles.house2}></Image>
           <div className={styles.p2cent_right}>
-            <text className={styles.par}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse id tellus est. Duis a nibh id arcu vehicula iaculis id vitae dolor. Aliquam diam urna, aliquet sed ligula in, tempor malesuada nibh. Suspendisse non vulputate nisl. Quisque mauris turpis, iaculis at accumsan eu, lobortis et leo. Duis a nibh id arcu vehicula iaculis id vitae dolor. Aliquam diam urna, aliquet sed ligula in, tempor malesuada nibh. Suspendisse non vulputate nisl</text>
+            <text className={styles.par}>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Suspendisse id tellus est. Duis a nibh id arcu vehicula iaculis id
+              vitae dolor. Aliquam diam urna, aliquet sed ligula in, tempor
+              malesuada nibh. Suspendisse non vulputate nisl. Quisque mauris
+              turpis, iaculis at accumsan eu, lobortis et leo. Duis a nibh id
+              arcu vehicula iaculis id vitae dolor. Aliquam diam urna, aliquet
+              sed ligula in, tempor malesuada nibh. Suspendisse non vulputate
+              nisl
+            </text>
             <div className={styles.box3}>
               <div className={styles.box}>
-                <Image src={caretaker} alt="icon" className={styles.icon}></Image>
-                <text className={styles.btext}>Lorem ipsum dolor sit amet, consectetur </text>
+                <Image
+                  src={caretaker}
+                  alt="icon"
+                  className={styles.icon}
+                ></Image>
+                <text className={styles.btext}>
+                  Lorem ipsum dolor sit amet, consectetur{" "}
+                </text>
               </div>
               <div className={styles.box}>
-                <Image src={caretaker} alt="icon" className={styles.icon}></Image>
-                <text className={styles.btext}>Lorem ipsum dolor sit amet, consectetur </text>
+                <Image
+                  src={caretaker}
+                  alt="icon"
+                  className={styles.icon}
+                ></Image>
+                <text className={styles.btext}>
+                  Lorem ipsum dolor sit amet, consectetur{" "}
+                </text>
               </div>
               <div className={styles.box}>
-                <Image src={caretaker} alt="icon" className={styles.icon}></Image>
-                <text className={styles.btext}>Lorem ipsum dolor sit amet, consectetur </text>
+                <Image
+                  src={caretaker}
+                  alt="icon"
+                  className={styles.icon}
+                ></Image>
+                <text className={styles.btext}>
+                  Lorem ipsum dolor sit amet, consectetur{" "}
+                </text>
               </div>
             </div>
-          <div className={styles.lm_btn}>Learn More</div>
+            <div className={styles.lm_btn}>Learn More</div>
           </div>
         </div>
 
@@ -114,7 +141,7 @@ const HomeIndex = () => {
         </div>
       </div>
 
-          <div className={styles.page3}>
+       <div className={styles.page3}>
         <div className={styles.p3top}>
         <text className={styles.p3head}>How It Works</text>
         </div>
@@ -150,11 +177,12 @@ const HomeIndex = () => {
             </div>
           </div>
         </div>
+
         <div className={styles.p3bot}>
           <div className={styles.callBtn}>
           Call (123) 456-7890
           </div>
-        </div>
+        </div> 
       </div>
 
       <div className={styles.frame18}>
@@ -231,7 +259,7 @@ const HomeIndex = () => {
           Call (123) 456-7890
           </div>
         </div>
-      </div>
+      </div> 
     </div>
   );
 };
