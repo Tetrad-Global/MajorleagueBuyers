@@ -69,29 +69,28 @@ const Footer = () => {
               <li className={styles.li}>
                 <LocationOnIcon />
                 <text className={styles.location}>
-                794 Mcallister St <br/> San Francisco, 94102</text>
+                  794 Mcallister St <br /> San Francisco, 94102
+                </text>
               </li>
             </ul>
           </div>
         </div>
       </div>
 
-        <hr/>
+      <hr />
 
-        <div className={styles.bottom}>
-            <text className={styles.b_text_left}>
-            Copyright © 2022 BRIX Templates
-            </text>
-            <div className={styles.b_text_right}>
-                <text className={styles.t}>All Rights Reserved</text>
-                <div className={styles.vrl}></div>
-                <text className={styles.t_link}>Terms and Condition</text>
-                <div className={styles.vrl}></div>
-                <text className={styles.t_link}>Privacy Policy</text>
-            </div>
+      <div className={styles.bottom}>
+        <text className={styles.b_text_left}>
+          Copyright © 2022 BRIX Templates
+        </text>
+        <div className={styles.b_text_right}>
+          <text className={styles.t}>All Rights Reserved</text>
+          <div className={styles.vrl}></div>
+          <text className={styles.t_link}>Terms and Condition</text>
+          <div className={styles.vrl}></div>
+          <text className={styles.t_link}>Privacy Policy</text>
         </div>
-
-
+      </div>
     </div>
   );
 };

@@ -185,7 +185,7 @@ const HomeIndex = () => {
         </div> 
       </div>
 
-      {/*<div className={styles.frame18}>
+      <div className={styles.frame18}>
         <div className={styles.logo}>
           <text className={styles.log}>
             LOGO <br/> GOES <br/> HERE
@@ -259,7 +259,7 @@ const HomeIndex = () => {
           Call (123) 456-7890
           </div>
         </div>
-      </div> */}
+      </div> 
     </div>
   );
 };

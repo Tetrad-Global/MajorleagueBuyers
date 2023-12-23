@@ -19,9 +19,9 @@ const Layout: React.FC<ComponentsProps> = ({ children }) => {
             <main className={styles.main}>{children}</main>
           </div>
         </div>
-        {/* <div className={styles.footer}>
+        <div className={styles.footer}>
           <Footer />
-        </div> */}
+        </div>
       </div>
     </div>
   );
