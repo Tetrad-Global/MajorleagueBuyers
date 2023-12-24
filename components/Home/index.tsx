@@ -16,8 +16,21 @@ import h6 from "../../public/images/h6.png";
 import h7 from "../../public/images/h7.png";
 import h8 from "../../public/images/h8.png";
 
+// import Slider from "react-slick";
+// import "slick-carousel/slick/slick.css";
+// import "slick-carousel/slick/slick-theme.css";
 
 const HomeIndex = () => {
+  // const settings = {
+  //   // Add your slider settings here
+  //   dots: true,
+  //   infinite: true,
+  //   speed: 500,
+  //   slidesToShow: 1,
+  //   slidesToScroll: 1,
+  //   centerMode: true,
+  // };
+
   return (
     <div className={styles.main}>
       <div className={styles.page1}>
@@ -79,7 +92,14 @@ const HomeIndex = () => {
           <Image src={house2} alt="house2" className={styles.house2}></Image>
           <div className={styles.p2cent_right}>
             <text className={styles.par}>
-            In the dynamic landscape of real estate, seizing the opportune moment is key to maximizing the value of your property. Major League Buyers invites you to embark on a journey of lucrative possibilities. Selling now opens doors to unprecedented opportunities, ensuring a seamless process guided by our seasoned professionals. Don't miss out on the chance to elevate your real estate portfolio—discover the advantages of selling with Major League Buyers today.
+              In the dynamic landscape of real estate, seizing the opportune
+              moment is key to maximizing the value of your property. Major
+              League Buyers invites you to embark on a journey of lucrative
+              possibilities. Selling now opens doors to unprecedented
+              opportunities, ensuring a seamless process guided by our seasoned
+              professionals. Don't miss out on the chance to elevate your real
+              estate portfolio—discover the advantages of selling with Major
+              League Buyers today.
             </text>
             <div className={styles.box3}>
               <div className={styles.box}>
@@ -89,7 +109,7 @@ const HomeIndex = () => {
                   className={styles.icon}
                 ></Image>
                 <text className={styles.btext}>
-                Optimize returns in booming market
+                  Optimize returns in booming market
                 </text>
               </div>
               <div className={styles.box}>
@@ -99,7 +119,7 @@ const HomeIndex = () => {
                   className={styles.icon}
                 ></Image>
                 <text className={styles.btext}>
-                Seize peak market value today.
+                  Seize peak market value today.
                 </text>
               </div>
               <div className={styles.box}>
@@ -109,7 +129,7 @@ const HomeIndex = () => {
                   className={styles.icon}
                 ></Image>
                 <text className={styles.btext}>
-                Unlock profits with strategic selling.
+                  Unlock profits with strategic selling.
                 </text>
               </div>
             </div>
@@ -146,7 +166,11 @@ const HomeIndex = () => {
               <text className={styles.contHead}>Request Offer</text>
               <Image src={img1} alt="banner" className={styles.banner}></Image>
               <text className={styles.contPara}>
-              Navigating the real estate market is simplified with Major League Buyers. When you request an offer, our efficient and transparent process kicks into gear. Begin by submitting essential details about your property, and our expert team will swiftly assess its value.
+                Navigating the real estate market is simplified with Major
+                League Buyers. When you request an offer, our efficient and
+                transparent process kicks into gear. Begin by submitting
+                essential details about your property, and our expert team will
+                swiftly assess its value.
               </text>
             </div>
           </div>
@@ -156,7 +180,10 @@ const HomeIndex = () => {
               <text className={styles.contHead}>Receive Your Offer</text>
               <Image src={img2} alt="banner" className={styles.banner}></Image>
               <text className={styles.contPara}>
-              Experience a seamless process with Major League Buyers. Submit your property details and swiftly receive a tailored, competitive offer. Take the next step in maximizing your real estate value.
+                Experience a seamless process with Major League Buyers. Submit
+                your property details and swiftly receive a tailored,
+                competitive offer. Take the next step in maximizing your real
+                estate value.
               </text>
             </div>
           </div>
@@ -166,7 +193,11 @@ const HomeIndex = () => {
               <text className={styles.contHead}>Seal The Deal</text>
               <Image src={img3} alt="banner" className={styles.banner}></Image>
               <text className={styles.contPara}>
-              Congratulations on reaching the final step with Major League Buyers. Our dedicated team ensures a smooth transition from offer to closure. As you finalize the deal, rest assured we're your trusted partner in securing the best outcome for your real estate transaction.
+                Congratulations on reaching the final step with Major League
+                Buyers. Our dedicated team ensures a smooth transition from
+                offer to closure. As you finalize the deal, rest assured we're
+                your trusted partner in securing the best outcome for your real
+                estate transaction.
               </text>
             </div>
           </div>
@@ -205,7 +236,9 @@ const HomeIndex = () => {
         <div className={styles.p4div1}>
           <text className={styles.p4head}>We Buy Houses For Cash</text>
           <text className={styles.p4tag}>
-          At Want To Sell Now, we never say no to a home that is not in perfect condition. We buy all types of houses to help you close quickly and get the most money for your home!
+            At Want To Sell Now, we never say no to a home that is not in
+            perfect condition. We buy all types of houses to help you close
+            quickly and get the most money for your home!
           </text>
         </div>
         <div className={styles.p4div2}>
@@ -247,12 +280,16 @@ const HomeIndex = () => {
         </div>
       </div>
 
-      <div className={styles.page5}>
+      {/* <div className={styles.page5}>
         <text className={styles.p5head}>TESTIMONIALS</text>
         <div className={styles.carousel}>
-          
+          <Slider {...settings}>
+            <div>Slide 1</div>
+            <div>Slide 2</div>
+            <div>Slide 3</div>
+          </Slider>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };

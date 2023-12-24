@@ -543,6 +543,13 @@
   -webkit-text-fill-color: transparent;
 }
 
+.carousel{
+border: 1px solid rgb(2, 2, 2);
+padding: 1rem;
+margin-top: 2rem;
+width: 800px;
+}
+
 @media (max-width: 1440px) {
   /* Page 1 */
   .head {
