@@ -16,7 +16,21 @@ import h6 from "../../public/images/h6.png";
 import h7 from "../../public/images/h7.png";
 import h8 from "../../public/images/h8.png";
 
+// import Slider from "react-slick";
+// import "slick-carousel/slick/slick.css";
+// import "slick-carousel/slick/slick-theme.css";
+
 const HomeIndex = () => {
+  // const settings = {
+  //   // Add your slider settings here
+  //   dots: true,
+  //   infinite: true,
+  //   speed: 500,
+  //   slidesToShow: 1,
+  //   slidesToScroll: 1,
+  //   centerMode: true,
+  // };
+
   return (
     <div className={styles.main}>
       <div className={styles.page1}>
@@ -78,14 +92,14 @@ const HomeIndex = () => {
           <Image src={house2} alt="house2" className={styles.house2}></Image>
           <div className={styles.p2cent_right}>
             <text className={styles.par}>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Suspendisse id tellus est. Duis a nibh id arcu vehicula iaculis id
-              vitae dolor. Aliquam diam urna, aliquet sed ligula in, tempor
-              malesuada nibh. Suspendisse non vulputate nisl. Quisque mauris
-              turpis, iaculis at accumsan eu, lobortis et leo. Duis a nibh id
-              arcu vehicula iaculis id vitae dolor. Aliquam diam urna, aliquet
-              sed ligula in, tempor malesuada nibh. Suspendisse non vulputate
-              nisl
+              In the dynamic landscape of real estate, seizing the opportune
+              moment is key to maximizing the value of your property. Major
+              League Buyers invites you to embark on a journey of lucrative
+              possibilities. Selling now opens doors to unprecedented
+              opportunities, ensuring a seamless process guided by our seasoned
+              professionals. Don't miss out on the chance to elevate your real
+              estate portfolio—discover the advantages of selling with Major
+              League Buyers today.
             </text>
             <div className={styles.box3}>
               <div className={styles.box}>
@@ -95,7 +109,7 @@ const HomeIndex = () => {
                   className={styles.icon}
                 ></Image>
                 <text className={styles.btext}>
-                  Lorem ipsum dolor sit amet, consectetur{" "}
+                  Optimize returns in booming market
                 </text>
               </div>
               <div className={styles.box}>
@@ -105,7 +119,7 @@ const HomeIndex = () => {
                   className={styles.icon}
                 ></Image>
                 <text className={styles.btext}>
-                  Lorem ipsum dolor sit amet, consectetur{" "}
+                  Seize peak market value today.
                 </text>
               </div>
               <div className={styles.box}>
@@ -115,7 +129,7 @@ const HomeIndex = () => {
                   className={styles.icon}
                 ></Image>
                 <text className={styles.btext}>
-                  Lorem ipsum dolor sit amet, consectetur{" "}
+                  Unlock profits with strategic selling.
                 </text>
               </div>
             </div>
@@ -141,9 +155,9 @@ const HomeIndex = () => {
         </div>
       </div>
 
-       <div className={styles.page3}>
+      <div className={styles.page3}>
         <div className={styles.p3top}>
-        <text className={styles.p3head}>How It Works</text>
+          <text className={styles.p3head}>How It Works</text>
         </div>
         <div className={styles.p3cent}>
           <div className={styles.boxCont}>
@@ -152,64 +166,67 @@ const HomeIndex = () => {
               <text className={styles.contHead}>Request Offer</text>
               <Image src={img1} alt="banner" className={styles.banner}></Image>
               <text className={styles.contPara}>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse id tellus est. Duis a nibh id arcu vehicula iaculis id vitae dolor. Aliquam diam urna, aliquet sed ligula in, tempor malesuada nibh. Suspendisse non vulputate nisl. Quisque mauris turpis, iaculis at accumsan 
+                Navigating the real estate market is simplified with Major
+                League Buyers. When you request an offer, our efficient and
+                transparent process kicks into gear. Begin by submitting
+                essential details about your property, and our expert team will
+                swiftly assess its value.
               </text>
             </div>
           </div>
           <div className={styles.boxCont}>
             <text className={styles.number}>02</text>
             <div className={styles.container}>
-            <text className={styles.contHead}>Receive Your Offer</text>
+              <text className={styles.contHead}>Receive Your Offer</text>
               <Image src={img2} alt="banner" className={styles.banner}></Image>
               <text className={styles.contPara}>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse id tellus est. Duis a nibh id arcu vehicula iaculis id vitae dolor. Aliquam diam urna, aliquet sed ligula in, tempor malesuada nibh. Suspendisse non vulputate nisl. Quisque mauris turpis, iaculis at accumsan 
+                Experience a seamless process with Major League Buyers. Submit
+                your property details and swiftly receive a tailored,
+                competitive offer. Take the next step in maximizing your real
+                estate value.
               </text>
             </div>
           </div>
           <div className={styles.boxCont}>
             <text className={styles.number}>03</text>
             <div className={styles.container}>
-            <text className={styles.contHead}>Request Offer</text>
+              <text className={styles.contHead}>Seal The Deal</text>
               <Image src={img3} alt="banner" className={styles.banner}></Image>
               <text className={styles.contPara}>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse id tellus est. Duis a nibh id arcu vehicula iaculis id vitae dolor. Aliquam diam urna, aliquet sed ligula in, tempor malesuada nibh. Suspendisse non vulputate nisl. Quisque mauris turpis, iaculis at accumsan 
+                Congratulations on reaching the final step with Major League
+                Buyers. Our dedicated team ensures a smooth transition from
+                offer to closure. As you finalize the deal, rest assured we're
+                your trusted partner in securing the best outcome for your real
+                estate transaction.
               </text>
             </div>
           </div>
         </div>
 
         <div className={styles.p3bot}>
-          <div className={styles.callBtn}>
-          Call (123) 456-7890
-          </div>
-        </div> 
+          <div className={styles.callBtn}>Call (123) 456-7890</div>
+        </div>
       </div>
 
       <div className={styles.frame18}>
         <div className={styles.logo}>
           <text className={styles.log}>
-            LOGO <br/> GOES <br/> HERE
+            LOGO <br /> GOES <br /> HERE
           </text>
         </div>
         <div className={styles.fRight}>
           <ul className={styles.rList}>
             <li className={styles.rLi}>
               <Image src={right} alt="right" className={styles.right}></Image>
-              <text className={styles.lText}>
-              We Can Sell Your House Fast
-              </text>
+              <text className={styles.lText}>We Can Sell Your House Fast</text>
             </li>
             <li className={styles.rLi}>
               <Image src={right} alt="right" className={styles.right}></Image>
-              <text className={styles.lText}>
-              We Make The Process Easy
-              </text>
+              <text className={styles.lText}>We Make The Process Easy</text>
             </li>
             <li className={styles.rLi}>
               <Image src={right} alt="right" className={styles.right}></Image>
-              <text className={styles.lText}>
-              You Won’t Pay Hidden Fees
-              </text>
+              <text className={styles.lText}>You Won’t Pay Hidden Fees</text>
             </li>
           </ul>
         </div>
@@ -218,7 +235,11 @@ const HomeIndex = () => {
       <div className={styles.page4}>
         <div className={styles.p4div1}>
           <text className={styles.p4head}>We Buy Houses For Cash</text>
-          <text className={styles.p4tag}>At Want To Sell Now, we never say no to a home that is not in perfect condition. We buy all types of houses to help you close quickly and get the most money for your home!</text>
+          <text className={styles.p4tag}>
+            At Want To Sell Now, we never say no to a home that is not in
+            perfect condition. We buy all types of houses to help you close
+            quickly and get the most money for your home!
+          </text>
         </div>
         <div className={styles.p4div2}>
           <div className={styles.blueBox}>
@@ -255,11 +276,20 @@ const HomeIndex = () => {
           </div>
         </div>
         <div className={styles.p4div3}>
-        <div className={styles.callBtn}>
-          Call (123) 456-7890
-          </div>
+          <div className={styles.callBtn}>Call (123) 456-7890</div>
         </div>
-      </div> 
+      </div>
+
+      {/* <div className={styles.page5}>
+        <text className={styles.p5head}>TESTIMONIALS</text>
+        <div className={styles.carousel}>
+          <Slider {...settings}>
+            <div>Slide 1</div>
+            <div>Slide 2</div>
+            <div>Slide 3</div>
+          </Slider>
+        </div>
+      </div> */}
     </div>
   );
 };
