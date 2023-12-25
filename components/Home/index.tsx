@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import styles from "./index.module.css";
 import Image from "next/image";
 import house2 from "../../public/images/house2.png";
@@ -15,21 +15,35 @@ import h5 from "../../public/images/h5.png";
 import h6 from "../../public/images/h6.png";
 import h7 from "../../public/images/h7.png";
 import h8 from "../../public/images/h8.png";
+import slide1Img from "../../public/images/slide1Img.jpeg";
+import slide2Img from "../../public/images/slide2Img.jpeg";
+import slide3Img from "../../public/images/slide3Img.jpeg";
 
-// import Slider from "react-slick";
-// import "slick-carousel/slick/slick.css";
-// import "slick-carousel/slick/slick-theme.css";
+import ReactSimplyCarousel from "react-simply-carousel";
+
+// const testimonials = [
+//   {
+//     name: "David R.",
+//     position: "Marketing Director",
+//     text: "Choosing Major League Buyers was the best decision we made for our property sale. The speed at which we received a competitive offer was impressive, but it was their dedication to client satisfaction that stood out. The team's communication and personalized approach made the entire process stress-free. Major League Buyers exceeded our expectations, and we highly recommend their services.",
+//     image: slide1Img,
+//   },
+//   {
+//     name: "Sarah M.",
+//     position: "South Canton Architecture",
+//     text: "Selling our property with Major League Buyers was a game-changer. Their team's professionalism and expertise made the entire process seamless. We received a competitive offer promptly, and the attention to detail in closing the deal exceeded our expectations. Major League Buyers truly delivers on their commitment to excellence!",
+//     image: slide2Img,
+//   },
+//   {
+//     name: "Emily P.",
+//     position: "Operations Manager",
+//     text: "Major League Buyers turned our real estate goals into reality. From the moment we requested an offer, their team demonstrated transparency and efficiency. We were impressed with the tailored offer we received, and the seamless journey from acceptance to closing. Trustworthy, reliable, and results-driven, Major League Buyers is our go-to in the world of real estate.",
+//     image: slide3Img,
+//   },
+// ];
 
 const HomeIndex = () => {
-  // const settings = {
-  //   // Add your slider settings here
-  //   dots: true,
-  //   infinite: true,
-  //   speed: 500,
-  //   slidesToShow: 1,
-  //   slidesToScroll: 1,
-  //   centerMode: true,
-  // };
+  const [activeSlideIndex, setActiveSlideIndex] = useState(0);
 
   return (
     <div className={styles.main}>
@@ -280,16 +294,212 @@ const HomeIndex = () => {
         </div>
       </div>
 
-      {/* <div className={styles.page5}>
+      <div className={styles.page5}>
         <text className={styles.p5head}>TESTIMONIALS</text>
         <div className={styles.carousel}>
-          <Slider {...settings}>
-            <div>Slide 1</div>
-            <div>Slide 2</div>
-            <div>Slide 3</div>
-          </Slider>
+        <ReactSimplyCarousel
+          activeSlideIndex={activeSlideIndex}
+          onRequestChange={setActiveSlideIndex}
+          itemsToShow={3}
+          itemsToScroll={1}
+          
+          forwardBtnProps={{
+            //here you can also pass className, or any other button element attributes
+            style: {
+              display: "none",
+              alignSelf: "center",
+              background: "black",
+              border: "none",
+              borderRadius: "50%",
+              color: "white",
+              cursor: "pointer",
+              fontSize: "20px",
+              height: 30,
+              lineHeight: 1,
+              textAlign: "center",
+              width: 30,
+            },
+            children: <span>{`>`}</span>,
+          }}
+          backwardBtnProps={{
+            //here you can also pass className, or any other button element attributes
+            style: {
+              display: "none",
+              alignSelf: "center",
+              background: "black",
+              border: "none",
+              borderRadius: "50%",
+              color: "white",
+              cursor: "pointer",
+              fontSize: "20px",
+              height: 30,
+              lineHeight: 1,
+              textAlign: "center",
+              width: 30,
+            },
+            children: <span>{`<`}</span>,
+          }}
+          responsiveProps={[
+            {
+              itemsToShow: 3,
+              itemsToScroll: 0,
+              maxWidth: 1440,
+            },
+            {
+              itemsToShow: 2,
+              itemsToScroll: 2,
+              maxWidth: 1024,
+            },
+            {
+              itemsToShow: 1,
+              itemsToScroll: 2,
+              maxWidth: 768,
+            },
+            {
+              itemsToShow: 1, 
+              itemsToScroll: 1,
+              maxWidth: 375,
+            },
+          ]}
+          speed={400}
+          easing="linear"
+        >
+          {/* here you can also pass any other element attributes. Also, you can use your custom components as slides */}
+          <div
+            style={{
+              marginLeft: "1rem",
+              width: "auto",
+              height: "auto",
+            }}
+          >
+            <div className={styles.slide}>
+              <div className={styles.slTop}>
+                <Image
+                  src={slide1Img}
+                  alt="Pic"
+                  className={styles.tPro}
+                ></Image>
+                <div className={styles.topRight}>
+                  <text className={styles.tName}>David R.</text>
+                  <text className={styles.tPos}>Marketing Director</text>
+                </div>
+              </div>
+              <div className={styles.slBot}>
+                <text className={styles.slidepara}>
+                  Choosing Major League Buyers was the best decision we made for
+                  our property sale. The speed at which we received a
+                  competitive offer was impressive, but it was their dedication
+                  to client satisfaction that stood out. The team's
+                  communication and personalized approach made the entire
+                  process stress-free. Major League Buyers exceeded our
+                  expectations, and we highly recommend their services.
+                </text>
+              </div>
+            </div>
+          </div>
+          <div
+            style={{
+              marginLeft: "1rem",
+              width: "auto",
+              height: "auto",
+            }}
+          >
+            <div className={styles.slide}>
+              <div className={styles.slTop}>
+                <Image
+                  src={slide2Img}
+                  alt="Pic"
+                  className={styles.tPro}
+                ></Image>
+                <div className={styles.topRight}>
+                  <text className={styles.tName}>Sarah m.</text>
+                  <text className={styles.tPos}>SOUTH CANTON ARCHITECTURE</text>
+                </div>
+              </div>
+              <div className={styles.slBot}>
+                <text className={styles.slidepara}>
+                  Selling our property with Major League Buyers was a
+                  game-changer. Their team's professionalism and expertise made
+                  the entire process seamless. We received a competitive offer
+                  promptly, and the attention to detail in closing the deal
+                  exceeded our expectations. Major League Buyers truly delivers
+                  on their commitment to excellence!
+                </text>
+              </div>
+            </div>
+          </div>
+          <div style={{ marginLeft: "1rem", width: "auto", height: "auto" }}>
+            <div className={styles.slide}>
+              <div className={styles.slTop}>
+                <Image
+                  src={slide3Img}
+                  alt="Pic"
+                  className={styles.tPro}
+                ></Image>
+                <div className={styles.topRight}>
+                  <text className={styles.tName}>Emily p.</text>
+                  <text className={styles.tPos}>Operations manager</text>
+                </div>
+              </div>
+              <div className={styles.slBot}>
+                <text className={styles.slidepara}>
+                  Major League Buyers turned our real estate goals into reality.
+                  From the moment we requested an offer, their team demonstrated
+                  transparency and efficiency. We were impressed with the
+                  tailored offer we received, and the seamless journey from
+                  acceptance to closing. Trustworthy, reliable, and
+                  results-driven, Major League Buyers is our go-to in the world
+                  of real estate.
+                </text>
+              </div>
+            </div>
+          </div>
+        </ReactSimplyCarousel>
         </div>
-      </div> */}
+
+        {/* <div className={styles.carousel}>
+          <div className={styles.slide}>
+            <div className={styles.slTop}>
+              <Image src={slide1Img} alt="Pic" className={styles.tPro}></Image>
+              <div className={styles.topRight}>
+                <text className={styles.tName}>David R.</text>
+                <text className={styles.tPos}>Marketing Director</text>
+              </div>
+            </div>
+            <div className={styles.slBot}>
+              <text className={styles.slidepara}>Choosing Major League Buyers was the best decision we made for our property sale. The speed at which we received a competitive offer was impressive, but it was their dedication to client satisfaction that stood out. The team's communication and personalized approach made the entire process stress-free. Major League Buyers exceeded our expectations, and we highly recommend their services.</text>
+            </div>
+          </div>
+
+          <div className={styles.slide}>
+            <div className={styles.slTop}>
+              <Image src={slide2Img} alt="Pic" className={styles.tPro}></Image>
+              <div className={styles.topRight}>
+                <text className={styles.tName}>Sarah m.</text>
+                <text className={styles.tPos}>SOUTH CANTON ARCHITECTURE</text>
+              </div>
+            </div>
+            <div className={styles.slBot}>
+              <text className={styles.slidepara}>
+              Selling our property with Major League Buyers was a game-changer. Their team's professionalism and expertise made the entire process seamless. We received a competitive offer promptly, and the attention to detail in closing the deal exceeded our expectations. Major League Buyers truly delivers on their commitment to excellence!
+              </text>
+            </div>
+          </div>
+
+          <div className={styles.slide}>
+            <div className={styles.slTop}>
+              <Image src={slide3Img} alt="Pic" className={styles.tPro}></Image>
+              <div className={styles.topRight}>
+                <text className={styles.tName}>Emily p.</text>
+                <text className={styles.tPos}>Operations manager</text>
+              </div>
+            </div>
+            <div className={styles.slBot}>
+              <text className={styles.slidepara}>Major League Buyers turned our real estate goals into reality. From the moment we requested an offer, their team demonstrated transparency and efficiency. We were impressed with the tailored offer we received, and the seamless journey from acceptance to closing. Trustworthy, reliable, and results-driven, Major League Buyers is our go-to in the world of real estate.</text>
+            </div>
+          </div>
+        </div> */}
+      </div>
     </div>
   );
 };
