@@ -62,7 +62,7 @@
   height: 100%;
   display: flex;
   align-items: center;
-  justify-content: right;
+  justify-content: space-between;
   padding: 0 2rem;
 }
 .icon {
@@ -82,7 +82,7 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 907px) {
   .mainDesk {
     display: none;
   }

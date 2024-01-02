@@ -26,7 +26,7 @@ const Footer = () => {
             <YouTubeIcon />
           </div>
         </div>
-        <div className={styles.right}>
+        {/* <div className={styles.right}>
           <div className={styles.row}>
             <text className={styles.head}>Product</text>
             <ul className={styles.ul}>
@@ -74,7 +74,7 @@ const Footer = () => {
               </li>
             </ul>
           </div>
-        </div>
+        </div> */}
       </div>
 
       <hr />
