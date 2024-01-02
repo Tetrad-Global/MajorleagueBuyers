@@ -1,17 +1,18 @@
 import React from "react";
 import styles from "./index.module.css";
 import Image from "next/image";
-import humb from "../../../public/images/humb.svg"
+import humb from "../../../public/images/humb.svg";
+import logo from "../../../public/images/logo.svg";
 
 const Header = () => {
-
-const clickHum = () => {
-  console.log("click")
-}
+  const clickHum = () => {
+    console.log("click");
+  };
 
   return (
     <>
       <div className={styles.mainDesk}>
+      <Image src={logo} alt="logo"></Image>
         <ul className={styles.links}>
           <li className={styles.s_li}>Home</li>
           <li className={styles.li}>Properties</li>
@@ -22,8 +23,16 @@ const clickHum = () => {
       </div>
 
       <div className={styles.mobNav}>
+        
         <div className={styles.humCol}>
-            <Image src={humb} alt="humberger" className={styles.icon} onClick={clickHum}></Image>
+      <Image src={logo} alt="logo"></Image>
+
+          <Image
+            src={humb}
+            alt="humberger"
+            className={styles.icon}
+            onClick={clickHum}
+          ></Image>
         </div>
         <div className={styles.humMenu}>
           <ul className={styles.links}>
