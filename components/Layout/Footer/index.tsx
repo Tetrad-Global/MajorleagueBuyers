@@ -81,7 +81,7 @@ const Footer = () => {
 
       <div className={styles.bottom}>
         <text className={styles.b_text_left}>
-          Copyright © 2022 BRIX Templates
+          Copyright © 2023 Major League Buyers
         </text>
         <div className={styles.b_text_right}>
           <text className={styles.t}>All Rights Reserved</text>
