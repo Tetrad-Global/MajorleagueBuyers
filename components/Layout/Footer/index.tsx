@@ -15,8 +15,7 @@ const Footer = () => {
       <div className={styles.top}>
         <div className={styles.left}>
           <text className={styles.tag}>
-            Lorem ipsum dolor sit amet <br /> consectetur adipiscing elit
-            aliquam{" "}
+          Real estate is about the dreams and aspirations <br /> of individuals, where each property tells a <br/>unique story.
           </text>
           <div className={styles.icons}>
             <FacebookIcon />
