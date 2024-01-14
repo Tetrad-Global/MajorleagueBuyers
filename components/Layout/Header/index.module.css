@@ -46,7 +46,15 @@
   font-size: 20px;
   font-weight: 500;
 }
+.a {
+  text-decoration: none;
+  color: #333;
+}
 
+.a.active {
+  font-weight: bold;
+  color: #0070f3; /* Change the color to match your design */
+}
 .mobNav {
   display: none;
   /* border: 1px solid red; */

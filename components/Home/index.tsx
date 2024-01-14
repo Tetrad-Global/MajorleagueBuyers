@@ -2,7 +2,9 @@ import React, { useEffect, useState } from "react";
 import styles from "./index.module.css";
 import Image from "next/image";
 import house2 from "../../public/images/house2.png";
-import caretaker from "../../public/images/caretaker.png";
+import dollar from "../../public/images/dollar.png";
+import piechart from "../../public/images/piechart.png";
+import upchart from "../../public/images/upchart.png";
 import img1 from "../../public/images/img1.png";
 import img2 from "../../public/images/img2.png";
 import img3 from "../../public/images/img3.png";
@@ -18,8 +20,11 @@ import h8 from "../../public/images/h8.png";
 import slide1Img from "../../public/images/slide1Img.jpeg";
 import slide2Img from "../../public/images/slide2Img.jpeg";
 import slide3Img from "../../public/images/slide3Img.jpeg";
+import logo from "../../public/images/logo.svg";
 
 import ReactSimplyCarousel from "react-simply-carousel";
+
+
 
 // const testimonials = [
 //   {
@@ -49,7 +54,7 @@ const HomeIndex = () => {
     <div className={styles.main}>
       <div className={styles.page1}>
         <text className={styles.head}>
-          Find Your <br /> <span className={styles.purple}>Home</span> With Us
+          Sell Your <br /> <span className={styles.purple}>Home</span>   With Us
         </text>
         <div className={styles.f1}>
           <form className={styles.form}>
@@ -118,7 +123,7 @@ const HomeIndex = () => {
             <div className={styles.box3}>
               <div className={styles.box}>
                 <Image
-                  src={caretaker}
+                  src={dollar}
                   alt="icon"
                   className={styles.icon}
                 ></Image>
@@ -128,7 +133,7 @@ const HomeIndex = () => {
               </div>
               <div className={styles.box}>
                 <Image
-                  src={caretaker}
+                  src={upchart}
                   alt="icon"
                   className={styles.icon}
                 ></Image>
@@ -138,7 +143,7 @@ const HomeIndex = () => {
               </div>
               <div className={styles.box}>
                 <Image
-                  src={caretaker}
+                  src={piechart}
                   alt="icon"
                   className={styles.icon}
                 ></Image>
@@ -162,8 +167,8 @@ const HomeIndex = () => {
               <text className={styles.btag}>Satisfied Customers</text>
             </div>
             <div className={styles.bss}>
-              <text className={styles.bhead}>98%</text>
-              <text className={styles.btag}>Satisfied Customers</text>
+              <text className={styles.bhead}>1673</text>
+              <text className={styles.btag}>Houses Sold</text>
             </div>
           </div>
         </div>
@@ -218,15 +223,13 @@ const HomeIndex = () => {
         </div>
 
         <div className={styles.p3bot}>
-          <div className={styles.callBtn}>Call (123) 456-7890</div>
+          <div className={styles.callBtn}>Call (832) 594-1211</div>
         </div>
       </div>
 
       <div className={styles.frame18}>
         <div className={styles.logo}>
-          <text className={styles.log}>
-            LOGO <br /> GOES <br /> HERE
-          </text>
+        <Image className={styles.logoimg} src={logo} alt="logo"></Image>
         </div>
         <div className={styles.fRight}>
           <ul className={styles.rList}>
@@ -290,7 +293,7 @@ const HomeIndex = () => {
           </div>
         </div>
         <div className={styles.p4div3}>
-          <div className={styles.callBtn}>Call (123) 456-7890</div>
+          <div className={styles.callBtn}>Call (832) 594-1211</div>
         </div>
       </div>
 

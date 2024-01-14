@@ -12,6 +12,7 @@
   background-image: url(../../public/images/home1st.jpg);
   background-size: cover;
   background-position: center center;
+  opacity: 0.9;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -26,7 +27,7 @@
   line-height: 95.692%;
 }
 .purple {
-  color: rgb(84, 84, 195);
+  color: rgb(60, 89, 221);
 }
 .f1 {
   background: #fff;
@@ -186,9 +187,9 @@
 .par {
   color: #1e1e1e;
   font-family: Montserrat;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 400;
-  line-height: 164.4%;
+  line-height: 120.4%;
 }
 .box3 {
   display: flex;
@@ -410,6 +411,10 @@
   justify-content: center;
   align-items: center;
   padding: 4rem;
+}
+.logoimg{
+width: auto;
+height: 200px;
 }
 .log {
   color: #fff;
